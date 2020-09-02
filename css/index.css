@@ -1,0 +1,716 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 176px;
+    background: url(../images/banner宝剑嫂.png) no-repeat;
+}
+header .leftbox {
+    float: left;
+    width: 720px;
+    padding-top: 12px;
+}
+header .rightbox {
+    float: left;
+    padding-left: 220px;
+    padding-top: 12px;
+    width: 690px;
+}
+header .middlebox {
+    float: left;
+    position: relative;
+}
+header .leftbox ul li {
+    float: left;
+    width: 60px;
+
+}
+header .rightbox ul li {
+    float: left;
+    width: 60px;
+}
+header .middlebox input {
+    float: left;
+    width: 460px;
+    height: 35px;   
+    margin-top: 5px;
+    padding-left: 5px;
+    outline: none;
+}
+header a {
+    display:inline-block ;
+    width: 100%;
+    height: 32px;
+    font-size: 13px;
+    line-height: 32px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+header .rightbox .pinkbtn {
+    /* 继承左浮动 */
+    width: 96px;
+    height: 32px;
+    border-radius: 5%;
+    line-height: 32px;
+    margin-left: 10px;
+    background-color:rgb(251, 114, 153);
+}
+
+header .middlebox .searchicon {
+    position: absolute;
+    right: 1px;
+    width: 40px;
+    height: 32px;
+    margin-top: 6px;
+    color: rgb(96, 96, 96);
+    background-color:rgb(231, 231, 231);
+    text-align: center;
+    line-height: 32px;
+}
+header .bilipic {
+    position: absolute;
+    bottom: 3px;
+    left: 154px;
+}
+header .tougao_hover li {
+    float: left;
+    width: 71px;
+}
+header .tougao_hover a {
+    
+    color:rgb(117, 117, 117);
+}
+header .tougao_hover {
+    /* 下一行的右浮动 */
+    float: right;
+    position: relative;
+    margin-right: 5px;
+    margin-top: 10px;
+    display: none;
+    width: 300px;
+    height: 78px;
+    border-radius: 1%;
+    background-color: rgb(255, 255, 255);
+}
+header .tougao:hover .tougao_hover {
+    display: block;
+}
+header .tran1 {
+    float: right;
+    /* background-color: #fff; */
+    position: absolute;
+    top: -12px;
+    right: 38px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: rgb(255, 255, 255);
+}
+/* 隐藏盒子使用fixed定位 */
+/* 添加滚动条 */
+header .history_hover {
+    position: fixed;
+    padding-left: 10px;
+    display: none;
+    overflow: auto;
+    right: 32px;
+    top: 50px;
+    width: 369px;   
+    height: 517px;
+    margin-right: 32px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+header .history:hover .history_hover {
+    display: block;
+}
+header .history_hover li {
+    text-align: left;
+    width: 90px;
+}
+header .history_hover .historytop li {
+    text-align: left;
+    line-height: 50px;
+}
+header .history_hover .historytop {
+    /* padding-left: 10px; */
+    width: 100%;
+    height: 50px;
+    border: 1px solid transparent;
+    border-bottom-color: rgb(244, 244, 244);
+}
+header .history_hover .today, header .history_hover .otherday{
+    float: left;
+    text-align: left;
+}
+header .history_hover img {
+    float: left;
+    margin-right: 10px;
+    width: 107px;
+    height: 60px;
+}
+header .history_hover .historymiddle {
+    /* margin-left: 10px; */
+    float: left;
+    width: 330px;
+    height: 60px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+header .history_hover .historymiddle .topic{
+    margin-bottom: 8px;
+}
+header .history_hover .tranbox {
+    position: relative;
+}
+/* 这个三角不显示！ */
+header .history_hover .tranbox .tran2 {
+    position: absolute;
+    top: -12px;
+    right: 49%;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: rgb(255, 255, 255);
+}
+nav {
+    width: 1630px;
+    height: 100px;
+    margin: 0 auto;
+}
+/* 注意将三个大盒子都加浮动 */
+nav .leftbox {
+    float: left;
+    width: 280px;
+    padding: 23px 0;
+}
+nav .middlebox {
+    float: left;
+    width: 1030px;
+    padding: 0 18px;
+    margin: 27px 0;
+    border-left:1px solid #e7e7e7;
+    border-right:1px solid #e7e7e7;
+}
+nav .rightbox {
+    float: left;
+    width: 310px;
+    padding: 27px 20px;
+}
+nav .leftbox ul li {
+    float: left;
+    padding: 0 15px;
+    /* width: 95px; */
+    text-align: center;
+    font-size: 14px;
+}
+/* 图片变圆直接在img标签上加borderradius */
+nav .leftbox img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+nav .leftbox a {
+    display: inline-block;
+    margin-top: 5px;
+    /* text-align: center;
+    font-size: 15px; */
+}
+nav .leftbox .navhome1 {
+    width: 32px;
+    height: 32px;
+    background-color: rgb(255, 92, 124);
+    border-radius: 50%;
+    vertical-align: middle;
+}
+nav .leftbox .navhome1::before {
+    position: absolute;
+    font-family: 'icomoon';
+    content: '\e99c';
+}
+nav .leftbox .navhome2::before {
+    position: absolute;
+    font-family: 'icomoon';
+    content: '\e906';
+}
+nav .leftbox .navhome2 {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: rgb(0, 161, 214);
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+nav .middlebox ul li {
+    float: left;
+    /* padding: 0 15px; */
+    width: 85px;
+    /* text-align: center; */
+    font-size: 14px;
+}
+nav .middlebox ul li:nth-child(8)，nav .middlebox ul li:nth-child(9)，nav .middlebox ul li:nth-child(10) {
+    width: 81px;
+}
+nav .middlebox span {
+    display: inline-block;
+    width: 25px;
+    height: 10px;
+    background-color: rgb( 115, 201, 229);
+    border-radius: 1px;
+    line-height: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    margin-left: 3px;
+    color: white;
+}
+nav .middlebox ul li {
+    padding-left: 0;
+    margin-right: 13px;
+    /* padding-right: 37px; */
+}
+nav .middlebox .middledown ul li {
+    margin-top: 13px;
+}
+/* 右方图片也使用了字体图标但还是不能用 */
+nav .rightbox ul li {
+    position: relative;
+    font-size: 14px;
+    float: left;
+    width: 65px;
+    margin-right: 20px;
+}
+nav .rightbox ul li::before {
+    position: absolute;
+    font-family: 'icomoon';
+    content: '\e99c';
+}
+nav .rightbox .rightdown ul li {
+    margin-top: 13px;
+}
+
+article {
+        width: 1630px;
+        height: 242px;
+        margin: 0 auto;
+}
+article .leftbox {
+    float: left;
+    position: relative;
+    width: 550px;
+    height: 242px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+article .rightbox {
+    position: relative;
+    float: left;
+    width: 1070px;
+    height: 242px;
+    
+}
+article ul li {
+    float: left;
+}
+article .leftbox .leftbtn{
+    display: none;
+    position: absolute;
+    left: -6px;
+    top: 106px;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    /* top: */
+}
+article .leftbox .rightbtn{
+    display: none;
+    position: absolute;
+    right : -7px;
+    top: 106px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: transparent;
+    text-align: center;
+    /* top: */
+}
+article .leftbox .leftimg  ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4000px;
+    
+}
+article .leftbox .leftimg img {
+    width: 550px;
+}
+article .leftbox .leftimg  {
+    width: 550px;
+    
+}
+article .leftbox .point {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+article .leftbox .point .current{
+    background-color: #fff;
+}
+article .leftbox .point ul li  {
+    /* background-image: url(../images/mainpic.png); */
+    width: 8px;
+    height: 8px;
+    /* background-color: transparent; */
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin-left: 6px;
+}
+article img {
+    width: 100%;
+    height: 100%;
+}
+article .leftbox p {
+    position: absolute;
+    color: #fff;
+    left: 10px;
+    bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+article .rightbox .d1 {
+    position: relative;
+}
+/* 超出文字省略号显示 */
+article .rightbox p {
+    position: absolute;
+    width: 180px;
+    color: #fff;
+    left: 10px;
+    bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+article .rightbox ul li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+article .rightbox ul .d5 {
+    margin-right: 0px;
+}
+article .rightbox ul .d6 {
+    margin-bottom: 0px;
+}
+/* 同一个父元素的多个绝对定位子元素按照html顺序，先写的在下面 */
+article .rightbox .zhezhao {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background-color:rgb(0,0,0,0.1) ;
+}
+aside {
+    position: absolute;
+    right: -65px;
+    top: 0px;
+    /* float: left; */
+    /* height: 576px; */
+    width: 55px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+}
+aside ul li {
+    /* float: left; */
+    width: 55px;
+    height: 20px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+aside ul .ico1 {
+    display: inline-block;
+    border-top: 1px solid #eaeaea;
+    /* border-bottom: 1px solid #eaeaea; */
+    margin-top: 8px;
+}
+aside ul .ico2 {
+    border-top: 1px solid #eaeaea;
+    padding-bottom: 6px;
+}
+
+.tuiguang {
+    width: 1630px;
+    height: 268px;
+    margin: 40px auto 10px auto;
+}
+.tuiguang .leftbox  {
+    float: left;
+    width: 1300px;
+}
+.tuiguang .leftbox .title {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.tuiguang .leftbox .title span, .tuiguang .leftbox .title .onlinelist,.tuiguang .leftbox .title p ,.tuiguang .leftbox .title h2{
+    display: inline-block;
+}
+.tuiguang .leftbox .list ul li {
+    float: left;
+    width: 206px;
+    height: 195px;
+    margin-right: 10px;
+}
+.tuiguang .rightbox {
+    float: left;
+    width: 320px;
+    margin-left: 10px;
+}
+.tuiguang .rightbox .onlinelist {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #eaeaea;
+    background-color: #f4f4f4;
+    margin-bottom: 17px;
+}
+.tuiguang .rightbox img {
+    width: 320px;
+}
+.tuiguang .leftbox .mainifo {
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+} 
+.middlead {
+    width: 1630px;
+    margin: 0 auto;
+}
+.middlead img {
+    width: 1630px;
+    height: 130px;
+}
+/* 为什么live子盒子没有撑开父盒子的高度？ */
+.live {
+    width: 1630px;
+    height: 470px;
+    margin: 20px auto;
+}
+.live .leftbox {
+    float: left;
+    width: 1300px;
+    height: 470px;
+}
+.live .leftbox .title .change {
+    width: 67px;
+    border: 1px solid;
+    margin-left: 894px;
+    margin-right: 10px;
+}
+.live .leftbox .title .more {
+    width: 67px;
+    border: 1px solid;
+    /* margin-left: 850px; */
+}
+.live .leftbox .title {
+    width: 1286px;
+    margin-bottom: 10px;
+}
+.live .leftbox .list ul li {
+    float: left;
+    width: 203px;
+    height: 193px;
+    margin-right: 13px;
+    margin-top: 10px;
+}
+.live .leftbox .title span, .live .leftbox .title h2, .live .leftbox .title p, .live .leftbox .title div {
+    display: inline-block;
+    /* float: left; */
+}
+.live .leftbox .list ul li p {
+    /* display: inline-block; */
+}
+.live .leftbox .list ul li a img {
+    float: left;
+}
+.live .leftbox .list ul li a img:first-child {
+    margin-bottom: 10px;
+}
+.live .leftbox .list ul li a img:nth-child(2) {
+    margin-right: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.live .leftbox .list ul li a img:nth-child(2) {
+    margin-right: 10px;
+    border-radius: 50%;
+    vertical-align: top;
+}
+.live .leftbox .list ul li a p {
+    display: block;
+}
+/* .live .leftbox .list ul li a p:nth-child(4) {
+    font-size: 12px;
+} */
+.live .leftbox .list ul li a p:nth-child(1) {
+    font-size: 14px;
+}
+.live .leftbox .list ul li a p:nth-child(3) {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #a1a4a4;
+}
+.live .leftbox .list ul li a div {
+    float: left;
+}
+.live .rightbox .title2{
+    float: left;
+}
+.live .rightbox .title2 ul li {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    border: 1px solid transparent;
+}
+.live .rightbox .getBlue  {
+    color: #1cabdd;
+    border-bottom-color: #1cabdd;
+    
+}
+/* 这里border会撑大盒子 ，第一个默认为蓝*/ 
+.live .rightbox ul li:first-child {
+    color:#1cabdd;
+    /* border: 1px solid transparent; */
+    border-bottom-color: #1cabdd;
+} 
+.live .rightbox .livepic {
+    display: none;
+    float: left;
+    margin-top: 23px;
+    /* height: 320px; */
+}
+.live .paihang {
+    float: left;
+    width: 330px;
+    /* display: none; */
+}
+.live .paihang p,.live .paihang span{
+    float: left;
+}
+.live .paihang img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.live .paihang ul li a{
+    display: inline-block;
+    width: 320px;
+    height: 40px;
+    margin:14px 0;
+}
+.live .paihang ul li a span:first-child{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    line-height: 15px;
+    text-align: center;
+}
+.live .paihang ul li a span:last-child{
+    float: right;
+}
+.live .paihang ul li a .blue    {
+    background-color: #00a1d6;
+    color:#FFF;
+}
+.live .rightbox .livepic img {
+    height: 320px;
+}
+footer {
+    height: 380px;
+    background-color: #f6f9fa;
+    padding: 20px 136px;
+}
+footer .leftbox, footer .middlebox, footer .rightbox, footer .wordbox {
+    float: left;
+}
+footer .ul1, footer .ul2, footer .ul3, footer .ul4, footer .ul5, footer .ul6{
+    float: left;
+}
+footer .leftbox {
+    width: 627px;
+}
+footer .middlebox {
+    width: 670px;
+}
+footer ul li {
+    font-size: 14px;
+    margin-top: 10px;
+}
+footer .leftbox ul {
+    width: 173px;
+}
+footer .middlebox ul {
+    width: 190px;
+}
+footer .middlebox {
+    padding-left: 35px; 
+    border: 1px solid #eeeeee;   
+    border-top: transparent;
+    border-bottom: transparent;
+}
+footer h4 {
+    font-size: 16px;
+    font-weight: normal;
+}
+footer .rightbox {
+    padding-top: 30px;
+    width: 330px;
+    padding-left: 30px;
+}
+footer .rightbox ul li{
+    float: left;
+    width: 100px;
+}
+footer .rightbox .downlown {
+    width: 38px;
+    height: 38px;
+    background-color: #585f69;
+    border-radius: 50%;
+}
+footer .rightbox .weibo {
+    width: 38px;
+    height: 38px;
+    background-color: #fe596c;
+    border-radius: 50%;
+}
+footer .rightbox .wechat {
+    width: 38px;
+    height: 38px;
+    background-color: #42c86b;
+    border-radius: 50%;
+}
+footer .rightbox a {
+    /* vertical-align:middle; */
+    /* margin-left: 10px; */
+    text-align: center;
+}
+footer .rightbox div {
+    margin:0 auto;
+}
+footer .wordbox {
+    margin-top: 20px;
+}
+footer .wordbox img {
+    float: left;
+    margin-right: 10px;
+}

@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?pjh42c');
+    src:  url('fonts/icomoon.eot?pjh42c#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?pjh42c') format('truetype'),
+      url('fonts/icomoon.woff?pjh42c') format('woff'),
+      url('fonts/icomoon.svg?pjh42c#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-mail_outline:before {
+    content: "\e900";
+  }
+  .icon-alternate_email:before {
+    content: "\e901";
+  }
+  .icon-refresh:before {
+    content: "\e902";
+  }
+  .icon-wifi:before {
+    content: "\e903";
+  }
+  .icon-person:before {
+    content: "\e904";
+  }
+  .icon-done_outline:before {
+    content: "\e905";
+  }
+  .icon-home3:before {
+    content: "\e906";
+  }
+  .icon-pacman:before {
+    content: "\e916";
+  }
+  .icon-price-tag:before {
+    content: "\e935";
+  }
+  .icon-location2:before {
+    content: "\e948";
+  }
+  .icon-bell:before {
+    content: "\e951";
+  }
+  .icon-box-add:before {
+    content: "\e95e";
+  }
+  .icon-undo2:before {
+    content: "\e967";
+  }
+  .icon-user:before {
+    content: "\e971";
+  }
+  .icon-spinner6:before {
+    content: "\e97f";
+  }
+  .icon-stats-bars:before {
+    content: "\e99c";
+  }
+  .icon-list-numbered:before {
+    content: "\e9b9";
+  }
+  .icon-earth:before {
+    content: "\e9ca";
+  }
+  .icon-attachment:before {
+    content: "\e9cd";
+  }
+  .icon-star-full:before {
+    content: "\e9d9";
+  }
+  .icon-heart:before {
+    content: "\e9da";
+  }
+  .icon-volume-high:before {
+    content: "\ea26";
+  }
+  .icon-loop2:before {
+    content: "\ea2e";
+  }
+  
