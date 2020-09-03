@@ -1,0 +1,56 @@
+.main{
+    width: 360px;
+    height: 480px;
+    margin: 200px auto;
+    border: 1px solid #dbd9de;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #dbd9de;
+}
+.main ul li input{
+    width: 280px;
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 3px;
+    padding:0 3px;
+}
+.main ul{
+    width: 280px;
+    margin:0 auto;
+}
+.main ul li p {
+    width: 280px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.main h1{
+    text-align: center;
+    margin-top: 25px ;
+}
+.main .red{
+    height: 18px;
+    /* display: none; */
+    color: red;
+    
+}
+.main ul li .borderg{
+    border-color: #61a781;
+   
+}
+.main ul li .borderr{
+    border-color: red;
+  
+}
+.main .green{
+    height: 18px;
+    /* display: none; */
+    color: #61a781;
+    
+}
+.main ul li input:last-child{
+    width: 280px;
+    height: 45px;
+    color: white;
+    background-color: #318dd9;
+    margin-top: 10px;
+    border-radius: 3px;
+}
