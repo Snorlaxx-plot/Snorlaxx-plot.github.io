@@ -43,6 +43,9 @@ window.addEventListener('load', function () {
             sNum.innerHTML = '' + seatNums + '';
             price.innerHTML = '' + totalPrice + '';
         })
+        button.addEventListener('click', function () {
+            location.assign('../video/video.html');
+        })
         /* button.addEventListener('click', function () {
             var used = seats.some(function (one) {
                 return one.className == 'seat blue';
