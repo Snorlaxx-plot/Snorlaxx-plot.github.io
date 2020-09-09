@@ -9,31 +9,54 @@
 
 <body>
     <script>
-        var n = 620;
-        // var n = readline();
-        var sq = [];
-        var sum = 0;
-        for (let i = 0; i < n; i++) {
-            sq[i] = i * i;//i平方
-            var temp = i.toString();//n中某数i
-            // console.log(temp);
-            var temp2 = sq[i].toString();
-            // console.log(temp2);
-            // console.log(temp.length);
-            var num = 0;
-            for (let j = 0; j < temp.length; j++) {
-                if (temp[j] == temp2[temp2.length - temp.length + j]) {
-
-                    num++;
-
-                }
-                if (num == temp.length) {
-                    sum++;
-                    // console.log(sum);
-                }
+        var arr = ['135682318',
+            '23457',
+            '14282123',
+            '14231728',
+            3,
+            '1724153'];
+        /* while (str = readline()) {
+            arr.push(str);
+        } */
+        var n = arr[arr.length - 2];
+        if (!(n > 1 && n <= 9)) {  //超出全输出
+            for (let k = 0; k < arr.length; k++) {
+                console.log(arr[k])
             }
         }
-        console.log(sum);
+        var last = arr[arr.length - 1];
+        var before = [];
+        for (let i = 0; i < arr.length - 2; i++) {
+            before.push(arr[i]);
+        }
+        var tezheng = [];
+        for (let i = 0; i < before.length; i++) {//数组遍历
+            if (!(before[i].length <= 20 && before[i].length > 2)) {
+                for (let k = 0; k < arr.length; k++) {
+                    console.log(arr[k])
+                }
+
+            }
+            let sub = '';
+            for (j = 0; j < before[i].length; j++) {//单个字符串遍历
+                if (before[i][j] < n) {
+                    sub = sub + '' + before[i][j] + '';
+                }
+            }
+            tezheng.push(sub);
+        }
+        var compare = '';
+        for (j = 0; j < last.length; j++) {//单个字符串遍历
+            if (last[j] < n) {
+                compare = compare + '' + last[j] + '';
+            }
+        }
+        //特征值计算完毕
+        for (let i = 0; i < tezheng.length; i++) {
+            if (tezheng[i].indexOf(compare) != -1 && tezheng[i].length >= compare.length) {
+                console.log(before[i]);
+            }
+        }
 
     </script>
 </body>

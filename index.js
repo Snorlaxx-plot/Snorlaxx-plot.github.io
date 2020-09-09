@@ -9,6 +9,9 @@ window.addEventListener('load', function () {
     projects[2].addEventListener('click', function () {
         location.assign('movie/movie.html');
     })
+    projects[3].addEventListener('click', function () {
+        location.assign('exchangerate/exchangeRate.html');
+    })
     /* projects.forEach(function (one) {
         one.addEventListener('click', function () {
             location.assign('b站/index.html')

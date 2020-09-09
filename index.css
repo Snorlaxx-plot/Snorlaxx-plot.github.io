@@ -23,6 +23,7 @@
 .main .top img:hover{
     transform:translateZ(5px);
 }
+
 .nav .snorlax{
     float: left;
     margin-left: 50px;
@@ -53,7 +54,9 @@
     color: #1f696c;
 }
 .white{
-    height: 530px;
+    /* display: flex;
+    justify-content: center; */
+    /* height: 530px; */
     padding-top: 100px;
     background-color: #fff;
 }
@@ -67,6 +70,12 @@
 }
 .project ul{
     margin: 0 auto;
+}
+.main .flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 .project ul li{
     width: 507.1px;
