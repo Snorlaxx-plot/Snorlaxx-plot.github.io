@@ -1,4 +1,5 @@
 window.addEventListener('load', function () {
+
     attention = document.querySelectorAll('.red');
     console.log(attention);
     uname = document.querySelector('.uname')
@@ -6,6 +7,11 @@ window.addEventListener('load', function () {
     password = document.querySelector('.password')
     confirm1 = document.querySelector('.confirm')
     sub = document.querySelector('.sub')
+    logindis = document.querySelector('.logindis')
+    const login = document.querySelector('.login')
+    // const sublogin = document.querySelector('.sublogin');
+    const closebtn = document.querySelector('.closebtn');
+    const loginpages = document.querySelector('.loginpage');
     var regexName = /^[\u4E00-\u9FA5A-Za-z0-9_]{3,20}$/;//中文、英文、数字包括下划线3-20个
     var regexEmail = /^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
     var regexPsw = /^\w{3,20}$/;//3-20位密码
@@ -68,20 +74,51 @@ window.addEventListener('load', function () {
     })
     // console.log(Array.from(attention));
     // console.log([...attention]);
-    sub.addEventListener('click', function (e) {
-        console.log([...attention]);
+    sub.addEventListener('click', function (e) {//登录
+        console.log([...attention]);//伪数组转真数组
         if ([...attention].some(value => value.className == 'red'
         )) {
 
             e.preventDefault();
-            alert('!')
+            // alert('!')
         }
         else {
-            alert('提交成功！')
-            uname.value = '';
-            email.value = '';
-            password.value = '';
-            confirm1.value = '';
+            // alert('提交成功！')
+            logindis.classList.remove('display');
+            sessionStorage.setItem('username', uname.value);
+            if (getname()) {
+                login.innerHTML = `WELCOME ${getname()}`;//显示欢迎
+                login.removeEventListener('click', loginwindow)
+            }
+
         }
     })
+
+
+    if (getname()) {//页面加载，查询是否有用户名
+        login.innerHTML = `WELCOME ${getname()}`;//显示欢迎
+        login.removeEventListener('click', loginwindow)
+    } else {
+        login.innerHTML = 'LOGIN'
+    }
+    closebtn.addEventListener('click', function () {//点击按钮关闭窗口
+        logindis.classList.remove('display');
+    })
+
+    login.addEventListener('click', loginwindow)//点击登录显示窗口
+    loginpages.addEventListener('click', (e) => {//阻止点击小窗口关闭窗口的冒泡事件
+        e.stopPropagation();
+    })
+    logindis.addEventListener('click', () => {//点击空余地关闭登录
+        logindis.classList.remove('display');
+    })
+    function getname() {
+        // console.log(localStorage.getItem('username'));
+        return sessionStorage.getItem('username');
+
+
+    }
+    function loginwindow() {
+        logindis.classList.add('display');
+    }
 })

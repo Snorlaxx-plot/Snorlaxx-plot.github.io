@@ -3,10 +3,109 @@
     margin:0 auto;
     
 }
+.iconfont{
+    font-family: 'iconfont'!important;
+}
 .main{
     height: 620px;
     background-color: #efefef;
 }
+.logindis{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgb(30,30,30,0.6);
+}
+
+.display{
+    display: block;
+    
+}
+/* ------------------- */
+
+
+.loginpage{
+    position: relative;
+    width: 360px;
+    height: 480px;
+    margin: 200px auto;
+    border: 1px solid #dbd9de;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #dbd9de;
+    background-color: rgba(193, 229, 229);
+    animation-name: loginwindow;
+    animation-duration: 0.5s;
+}
+/* 窗口动画效果 */
+@keyframes loginwindow{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.loginpage .closebtn{
+    position: absolute;
+    color: #FFF;
+    font-size: 30px;
+    top: -30px;
+    right: -25px;
+}
+.loginpage ul li input{
+    width: 280px;
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 3px;
+    padding:0 3px;
+}
+.loginpage ul{
+    width: 280px;
+    margin:0 auto;
+}
+.loginpage ul li p {
+    width: 280px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.loginpage h1{
+    text-align: center;
+    margin-top: 25px ;
+}
+.loginpage .red{
+    height: 18px;
+    /* display: none; */
+    color: red;
+    
+}
+.loginpage ul li .borderg{
+    border-color: #61a781;
+   
+}
+.loginpage ul li .borderr{
+    border-color: red;
+  
+}
+.loginpage .green{
+    height: 18px;
+    /* display: none; */
+    color: #61a781;
+    
+}
+.loginpage ul li input:last-child{
+    width: 280px;
+    height: 45px;
+    color: white;
+    background-color: #318dd9;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+/* --------------- */
 .main .top{
     position: relative;
     width: 100%;
@@ -29,6 +128,16 @@
     margin-left: 50px;
     margin-top: 50px;
     color: #1f696c;
+}
+.nav .home,.nav .login{
+    cursor: pointer;
+}
+.nav .login{
+    float: right;
+    margin-right: 50px;
+    margin-top: 60px;
+    font-size: 20px;
+    border-bottom:1px solid #1f696c;
 }
 .nav .home{
     float: right;
@@ -54,9 +163,7 @@
     color: #1f696c;
 }
 .white{
-    /* display: flex;
-    justify-content: center; */
-    /* height: 530px; */
+    
     padding-top: 100px;
     background-color: #fff;
 }

@@ -9,54 +9,100 @@
 
 <body>
     <script>
-        var arr = ['135682318',
-            '23457',
-            '14282123',
-            '14231728',
-            3,
-            '1724153'];
-        /* while (str = readline()) {
-            arr.push(str);
-        } */
-        var n = arr[arr.length - 2];
-        if (!(n > 1 && n <= 9)) {  //超出全输出
-            for (let k = 0; k < arr.length; k++) {
-                console.log(arr[k])
-            }
-        }
-        var last = arr[arr.length - 1];
-        var before = [];
-        for (let i = 0; i < arr.length - 2; i++) {
-            before.push(arr[i]);
-        }
-        var tezheng = [];
-        for (let i = 0; i < before.length; i++) {//数组遍历
-            if (!(before[i].length <= 20 && before[i].length > 2)) {
-                for (let k = 0; k < arr.length; k++) {
-                    console.log(arr[k])
-                }
+        // var arr = ['135682318',
+        //     '23457',
+        //     '14282123',
+        //     '14231728',
+        //     3,
+        //     '1724153'];
+        // /* while (str = readline()) {
+        //     arr.push(str);
+        // } */
+        // var n = arr[arr.length - 2];
+        // if (!(n > 1 && n <= 9)) {  //超出全输出
+        //     for (let k = 0; k < arr.length; k++) {
+        //         console.log(arr[k])
+        //     }
+        // }
+        // var last = arr[arr.length - 1];
+        // var before = [];
+        // for (let i = 0; i < arr.length - 2; i++) {
+        //     before.push(arr[i]);
+        // }
+        // var tezheng = [];
+        // for (let i = 0; i < before.length; i++) {//数组遍历
+        //     if (!(before[i].length <= 20 && before[i].length > 2)) {
+        //         for (let k = 0; k < arr.length; k++) {
+        //             console.log(arr[k])
+        //         }
 
-            }
-            let sub = '';
-            for (j = 0; j < before[i].length; j++) {//单个字符串遍历
-                if (before[i][j] < n) {
-                    sub = sub + '' + before[i][j] + '';
+        //     }
+        //     let sub = '';
+        //     for (j = 0; j < before[i].length; j++) {//单个字符串遍历
+        //         if (before[i][j] < n) {
+        //             sub = sub + '' + before[i][j] + '';
+        //         }
+        //     }
+        //     tezheng.push(sub);
+        // }
+        // var compare = '';
+        // for (j = 0; j < last.length; j++) {//单个字符串遍历
+        //     if (last[j] < n) {
+        //         compare = compare + '' + last[j] + '';
+        //     }
+        // }
+        // //特征值计算完毕
+        // for (let i = 0; i < tezheng.length; i++) {
+        //     if (tezheng[i].indexOf(compare) != -1 && tezheng[i].length >= compare.length) {
+        //         console.log(before[i]);
+        //     }
+        // }
+
+        var combinationSum3 = function (k, n) {
+            let arr = Array(k);
+            makeArr(arr);//生成数组
+            var sum;
+            sum = arr.reduce((a, b) => {
+                return a + b;
+            })
+
+            var differ = res.every(one => {
+                return one != arr;
+            })
+            if (res.length < 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1) {
+                if (sum == n && differ) {
+                    res.push(arr);//push满足的数组
+                } else {
+                    combinationSum3();//不满足重新生成
                 }
             }
-            tezheng.push(sub);
         }
-        var compare = '';
-        for (j = 0; j < last.length; j++) {//单个字符串遍历
-            if (last[j] < n) {
-                compare = compare + '' + last[j] + '';
+        function randomNum() {
+            var each = Math.floor((Math.random() * 10));
+
+            return each;
+        }
+        function makeArr(arr) {
+            // let arr=Array(k);
+
+            for (let i = 0; i < arr.length; i++) {
+
+                do {
+                    var flag = 0;
+                    var each = randomNum();
+                    for (let j = 0; j < arr.length; j++) {
+                        if (each == arr[j]) {
+                            flag = 1;
+                        }
+                    }
+                } while (flag)
+                arr.push(each);
             }
         }
-        //特征值计算完毕
-        for (let i = 0; i < tezheng.length; i++) {
-            if (tezheng[i].indexOf(compare) != -1 && tezheng[i].length >= compare.length) {
-                console.log(before[i]);
-            }
-        }
+
+        var res = [];
+        combinationSum3(3, 7)
+        console.log(res);
 
     </script>
 </body>

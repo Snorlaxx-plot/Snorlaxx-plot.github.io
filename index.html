@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+    <script src="indexlogin.js"></script>
+    <style>
+        @font-face {
+            font-family: 'iconfont';
+            /* project id 2031773 */
+            src: url('//at.alicdn.com/t/font_2031773_byp5hsof8jv.eot');
+            src: url('//at.alicdn.com/t/font_2031773_byp5hsof8jv.eot?#iefix') format('embedded-opentype'),
+                url('//at.alicdn.com/t/font_2031773_byp5hsof8jv.woff2') format('woff2'),
+                url('//at.alicdn.com/t/font_2031773_byp5hsof8jv.woff') format('woff'),
+                url('//at.alicdn.com/t/font_2031773_byp5hsof8jv.ttf') format('truetype'),
+                url('//at.alicdn.com/t/font_2031773_byp5hsof8jv.svg#iconfont') format('svg');
+        }
+    </style>
 </head>
 
 <body>
@@ -19,6 +32,7 @@
                         <h1>SNORLAX</h1>
                     </div>
                     <div class="home">HOME</div>
+                    <div class="login"></div>
                     <img src="images/Snipaste_2020-09-03_16-46-58.png" alt="">
                 </div>
                 <div class="myinfo">
@@ -67,6 +81,37 @@
 
 
             </div>
+        </div>
+    </div>
+    <div class="logindis">
+        <div class="loginpage">
+            <div class="closebtn iconfont">&#xe668;</div>
+            <h1>登录</h1>
+            <table>
+                <ul>
+                    <li>
+                        <p>用户名</p><input type="text" class="uname">
+                        <div class="red"></div>
+                        <!-- <div class="green">输入正确</div> -->
+                    </li>
+                    <li>
+                        <p>邮箱</p><input type="text" class="email">
+                        <div class="red"></div>
+                        <!-- <div class="green">输入正确</div> -->
+                    </li>
+                    <li>
+                        <p>密码</p><input type="password" class="password">
+                        <div class="red"></div>
+                        <!-- <div class="green">输入正确</div> -->
+                    </li>
+                    <li>
+                        <p>确认密码</p><input type="password" class="confirm">
+                        <div class="red"></div>
+                        <!-- <div class="green">输入正确</div> -->
+                    </li>
+                    <li><input type="submit" class="sub" value="登录"></li>
+                </ul>
+            </table>
         </div>
     </div>
 </body>
