@@ -1,0 +1,21 @@
+.main{
+    width: 800px;
+    margin: 150px auto;
+}
+.main table{
+    width: 800px;
+    height: 500px;
+    /* table定高宽自适应 */
+    border: 1px solid #000;
+    align-items: center;
+    /* cellspacing:0 */
+}
+.main table thead{
+    background-color: rgb(175, 159, 159);
+}
+.main td{
+    padding:20px 20px;
+}
+.main tr{
+   
+}

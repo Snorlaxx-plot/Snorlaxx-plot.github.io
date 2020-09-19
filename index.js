@@ -17,4 +17,6 @@ window.addEventListener('load', function () {
             location.assign('b站/index.html')
         })
     }) */
+
+
 })
