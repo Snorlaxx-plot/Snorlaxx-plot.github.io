@@ -12,6 +12,9 @@ window.addEventListener('load', function () {
     projects[3].addEventListener('click', function () {
         location.assign('exchangerate/exchangeRate.html');
     })
+    projects[4].addEventListener('click', function () {
+        location.assign('cart/cart.html');
+    })
     /* projects.forEach(function (one) {
         one.addEventListener('click', function () {
             location.assign('b站/index.html')
