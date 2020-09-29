@@ -103,29 +103,49 @@
         var res = [];
         combinationSum3(3, 7)
         console.log(res); */
-        function exist(board, word) {
-            var nums = 0;
-            for (let i = 0; i < word.length; i++) {//每个字母
-                var one = word[i];
+        /*  function exist(board, word) {
+             var nums = 0;
+             for (let i = 0; i < word.length; i++) {//每个字母
+                 var one = word[i];
+ 
+                 for (let k = 0; k < board.length; k++) {//每一行数组
+ 
+                     if (board[k].indexOf(one) != -1) {
+                         nums++;
+                         let x = board[k].indexOf(one);
+                         console.log(board[k][x]);
+                         board[k][x] = '';
+                         break;
+                     }
+ 
+                 }
+             }
+             if (nums == word.length) {
+                 return true;
+             } else { return false; }
+         };
+         res = exist([["a", "b"], ["c", "d"]], "abcd");
+         console.log(res); */
 
-                for (let k = 0; k < board.length; k++) {//每一行数组
+        var fn = function (n) {
+            arr = []
+            for (let i = 2; i <= n; i++) {
 
-                    if (board[k].indexOf(one) != -1) {
-                        nums++;
-                        let x = board[k].indexOf(one);
-                        console.log(board[k][x]);
-                        board[k][x] = '';
-                        break;
-                    }
-
+                if (n % i == 0) {
+                    n = n / i;
+                    arr.push(i);
                 }
+
             }
-            if (nums == word.length) {
-                return true;
-            } else { return false; }
-        };
-        res = exist([["a", "b"], ["c", "d"]], "abcd");
-        console.log(res);
+            for (let j = 0; j < arr.length; j++) {
+                fn(arr[j])
+            }
+            console.log(arr)
+
+        }
+        fn(100);
+
+
     </script>
 </body>
 
